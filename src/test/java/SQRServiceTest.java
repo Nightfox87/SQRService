@@ -7,8 +7,8 @@ import ru.netology.sqr.SQRService;
 public class SQRServiceTest {
 
     @ParameterizedTest
-    @CsvFileSource(resources = {"/testData.csv"})
-    public void test(int lowLimit, int highLimit, int expected) {
+    @CsvFileSource(resources = {"/testdata.csv"})
+    public void sqrCountCalculateTest(int lowLimit, int highLimit, int expected) {
         SQRService service = new SQRService();
 
         int actual = service.sqrCountCalculate(lowLimit, highLimit);
